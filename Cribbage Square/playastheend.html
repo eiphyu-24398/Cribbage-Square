@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="./script/playend.js"></script>
+    <script src="./script/score.js"></script>
+</head>
+<body>
+    <header>
+        <h1 class="header">Cribbage Square</h1>
+        <h3 class="header" style="color: green;" id="scoreName"></h3>
+    </header>
+    <main>
+        <div class="first">
+            <h1>Dealer</h1>
+            <h1 id="player1"></h1>
+            <div class="player-card" id="p1"></div>
+        </div>
+        <div id="game-board">
+            <div class="card" id="twentyone"></div>
+            <div class="card" id="twentytwo"></div>
+            <div class="card" id="twentythree"></div>
+            <div class="card" id="twentyfour"></div>
+            <div class="card" id="twentyfive"></div>
+            <div class="card" id="twenty"></div>
+            <div class="card" id="seven"></div>
+            <div class="card" id="eight"></div>
+            <div class="card" id="nine"></div>
+            <div class="card" id="ten"></div>
+            <div class="card" id="nineteen"></div>
+            <div class="card" id="six"></div>
+            <div class="card" id="one"></div>
+            <div class="card" id="two"></div>
+            <div class="card" id="eleven"></div>
+            <div class="card" id="eighteen"></div>
+            <div class="card" id="five"></div>
+            <div class="card" id="four"></div>
+            <div class="card" id="three"></div>
+            <div class="card" id="twelve"></div>
+            <div class="card" id="seventeen"></div>
+            <div class="card" id="sixteen"></div>
+            <div class="card" id="fifteen"></div>
+            <div class="card" id="fourteen"></div>
+            <div class="card" id="thirteen"></div>
+        </div>
+        <div class="second">
+            <h1>Non-dealer</h1>
+            <h1 id="player2"></h1>
+            <div class="player-card" id="p2"></div>
+        </div>
+    </main>
+    <div class="popup" id="popup">
+        <h1 class="popup-text">Game Over</h1>
+        <h2 class="popup-text" id="winner"></h2>
+        <h3 class="popup-text" id="p1_final"></h3>
+        <h3 class="popup-text" id="p2_final"></h3>
+        <button class="popup-btn" onclick="location.reload();">Start Again</button>
+    </div>
+    <div class="p_select" id="p_select">
+        <h1 class="popup-text">Select Player</h1>
+        <div class="select_btn">
+            <button style="margin-left: 90px;" onclick="p_select('dealer')">Dealer</button>
+            <button style="margin-left: 30px;" onclick="p_select('non-dealer')">Non-Dealer</button>
+        </div>
+    </div>
+    <script src="./script/2player.js"></script>
+</body>
+</html>
